@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Books and Articles</title>
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      
+   </head>
+<body>
+      <!--==================== HEADER ====================-->
+   <div class="t-container">
+      <header class="header" id="header">
+         <nav class="nav nav-container">
+            <a href="#" class="nav__logo">Author Name</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About Us</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="booksales.html" class="nav__link">Books</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shortfilm.html" class="nav__link">Short Films</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search button -->
+               <i class="ri-search-line nav__search" id="search-btn"></i>
+
+               <!-- Book icon added here -->
+               <i class="ri-book-line nav__book-icon" id="book-list-link"></i>
+               
+               <!-- Login button -->
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+            
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+<!--==================== LOGIN ====================-->
+<div class="login" id="login">
+   <form action="" class="login__form">
+       <h2 class="login__title">Log In</h2>
+
+       <div class="login__group">
+           <div>
+               <label for="email" class="login__label">Email</label>
+               <input type="email" placeholder="Write your email" id="email" class="login__input">
+           </div>
+
+           <div>
+               <label for="password" class="login__label">Password</label>
+               <input type="password" placeholder="Enter your password" id="password" class="login__input">
+           </div>
+       </div>
+
+       <div>
+           <p class="login__signup">
+               You do not have an account? <a href="#" id="open-signup">Sign up</a>
+           </p>
+
+           <a href="#" class="login__forgot">
+               You forgot your password
+           </a>
+
+           <button type="submit" class="login__button">Log In</button>
+       </div>
+   </form>
+
+   <i class="ri-close-line login__close" id="login-close"></i>
+</div>
+
+<!--==================== SIGN-UP ====================-->
+<div class="signup" id="signup">
+   
+   <form action="" class="signup__form">
+      <i class="ri-close-line signup__close" id="signup-close"></i>
+
+       <h2 class="signup__title">Sign Up</h2>
+
+       <div class="signup__group">
+            <div>
+               <label for="signup-name" class="signup__label">Name</label>
+               <input type="text" placeholder="Enter your Name" id="signup-name" class="signup__input">
+            </div>
+            <div>
+               <label for="signup-email" class="signup__label">Email</label>
+               <input type="email" placeholder="Enter your email" id="signup-email" class="signup__input">
+            </div>
+            <div>
+               <label for="signup-password" class="signup__label">Password</label>
+               <input type="password" placeholder="Create your password" id="signup-password" class="signup__input">
+            </div>
+       </div>
+
+       <div>
+           <p class="signup__login">
+               Already have an account? <a href="#" id="open-login">Log In</a>
+           </p>
+
+           <button type="submit" class="signup__button">Sign Up</button>
+       </div>
+   </form>
+
+</div>
+</div>
+   <div class="b-container">
+       <!-- Section 1: 2/9 part with scrollable book names -->
+       <div class="section section-1">
+           <h2>Book List</h2>
+           <ul>
+               <li class="list-group-item"><a href="booklist.html" target="_blank" style="text-decoration: none;">The Bible</a></li>
+               <li class="list-group-item"><a href="https://example.com/book2" target="_blank" style="text-decoration: none;">Mere Christianity by C.S. Lewis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book3" target="_blank" style="text-decoration: none;">The Pilgrim's Progress by John Bunyan</a></li>
+               <li class="list-group-item"><a href="https://example.com/book1" target="_blank" style="text-decoration: none;">The Bible</a></li>
+               <li class="list-group-item"><a href="https://example.com/book2" target="_blank" style="text-decoration: none;">Mere Christianity by C.S. Lewis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book3" target="_blank" style="text-decoration: none;">The Pilgrim's Progress by John Bunyan</a></li>
+               <li class="list-group-item"><a href="https://example.com/book4" target="_blank" style="text-decoration: none;">The Purpose Driven Life by Rick Warren</a></li>
+               <li class="list-group-item"><a href="https://example.com/book5" target="_blank" style="text-decoration: none;">The Case for Christ by Lee Strobel</a></li>
+               <li class="list-group-item"><a href="https://example.com/book6" target="_blank" style="text-decoration: none;">The Screwtape Letters by C.S. Lewis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book7" target="_blank" style="text-decoration: none;">God's Smuggler by Brother Andrew</a></li>
+               <li class="list-group-item"><a href="https://example.com/book8" target="_blank" style="text-decoration: none;">The Ragamuffin Gospel by Brennan Manning</a></li>
+               <li class="list-group-item"><a href="https://example.com/book9" target="_blank" style="text-decoration: none;">Knowing God by J.I. Packer</a></li>
+               <li class="list-group-item"><a href="https://example.com/book10" target="_blank" style="text-decoration: none;">Desiring God by John Piper</a></li>
+               <li class="list-group-item"><a href="https://example.com/book11" target="_blank" style="text-decoration: none;">The Cost of Discipleship by Dietrich Bonhoeffer</a></li>
+               <li class="list-group-item"><a href="https://example.com/book12" target="_blank" style="text-decoration: none;">Radical by David Platt</a></li>
+               <li class="list-group-item"><a href="https://example.com/book13" target="_blank" style="text-decoration: none;">The Insanity of God by Nik Ripken</a></li>
+               <li class="list-group-item"><a href="https://example.com/book14" target="_blank" style="text-decoration: none;">The Jesus I Never Knew by Philip Yancey</a></li>
+               <li class="list-group-item"><a href="https://example.com/book15" target="_blank" style="text-decoration: none;">Crazy Love by Francis Chan</a></li>
+               <li class="list-group-item"><a href="https://example.com/book16" target="_blank" style="text-decoration: none;">Heaven by Randy Alcorn</a></li>
+               <li class="list-group-item"><a href="https://example.com/book17" target="_blank" style="text-decoration: none;">The Practice of the Presence of God by Brother Lawrence</a></li>
+               <li class="list-group-item"><a href="https://example.com/book18" target="_blank" style="text-decoration: none;">The Imitation of Christ by Thomas à Kempis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book19" target="_blank" style="text-decoration: none;">Not a Fan by Kyle Idleman</a></li>
+               <li class="list-group-item"><a href="https://example.com/book20" target="_blank" style="text-decoration: none;">The Circle Maker by Mark Batterson</a></li>
+
+           </ul>
+       </div>
+    </div>
+
+
+    <div class="title">
+        <h1>Contact</h1>
+    </div>
+
+    <div class="contact-container">
+        <div class="form-section">
+            <h2>அகரமுதலாய்...</h2>
+            <form action="#">
+                <label for="name">பெயர்</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">மின்னஞ்சல்</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="phone">தொலைபேசி</label>
+                <input type="text" id="phone" name="phone">
+                
+                <label for="subject">சமாசாரம்</label>
+                <input type="text" id="subject" name="subject">
+                
+                <label for="message">நீங்கள் என்ன எழுதுகிறீர்கள்?</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">அனுப்பவும்</button>
+            </form>
+        </div>
+        
+        <div class="image-section">
+            <div class="card">
+                <img src="assets\img\smiling-888532_640.jpg" alt="Profile Image">
+                <div class="contact-info">
+                    <h3>To contact me:</h3>
+                    <p>Author Name</p>
+                    <p>No.9 Street, Area <br> City, Country</p>
+                    <p>Email: Author@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+    <!-- Back To Top Button -->
+<a href="#" class="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)">
+    <path d="M13.0001 7.82843V20H11.0001V7.82843L5.63614 13.1924L4.22192 11.7782L12.0001 4L19.7783 11.7782L18.3641 13.1924L13.0001 7.82843Z"></path></svg>
+ </a>
+ 
+ <!-- Responsive Stylish Footer -->
+ <footer class="footer">
+    <div class="footer-content">
+    <!-- Social Media Icons -->
+    <div class="social-media">
+       <h3>Follow Us</h3>
+       <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+       <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+       <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+       <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+ 
+    <!-- Contact Details -->
+    <div class="contact-details">
+       <h3>Contact Us</h3>
+       <p><i class="fas fa-envelope"></i> Email : <a href="mailto:contact@example.com">contact@example.com</a></p>
+       <p><i class="fas fa-phone-alt"></i> Phone : +123 456 7890</p>
+       <p><i class="fas fa-map-marker-alt"></i> Address : 123 Street, City, Country</p>
+       <p><i class="fas fa-globe"></i> Website : <a href="https://www.example.com">www.example.com</a></p>
+    </div>
+    </div>
+ 
+    <!-- Responsive Map -->
+    <div class="footer-map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2005921.825778145!2d78.874373875!3d10.90157918223256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5766c36af8f%3A0x6b032561715070a3!2sBishop%20Heber%20College!5e0!3m2!1sen!2sin!4v1727547855469!5m2!1sen!2sin"
+       width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+ 
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+    <p>&copy; Copyrights <strong>MD INFOTECH.</strong>  All rights reserved.</p>
+    <span>Designed and Developed by <a href="https://mdinfotech.tech">MD INFOTECH</a></span>
+    </div>
+ </footer>
+
+
+
+ 
+ <!--=============== MAIN JS ===============-->
+ <script src="assets/js/main.js"></script>
+ <script>
+    
+    // Section 2
+    // Get the section element
+    const bookListSection = document.querySelector('.section-1');
+    // Add a nav link to trigger the popup (assumed to be in your navigation bar)
+    const navLink = document.getElementById('book-list-link'); // Assuming an ID for the nav link
+    const closeButton = document.createElement('span'); // Create a close button inside the section
+    closeButton.textContent = '×';
+    closeButton.classList.add('close-button'); // Add the close-button class for styling
+    bookListSection.appendChild(closeButton);
+
+    // Show the popup on nav link click
+    navLink.addEventListener('click', function(event) {
+       event.preventDefault();
+       bookListSection.classList.add('show'); // Add the "show" class to slide the popup in
+    });
+
+    // Hide the popup when clicking the close button
+    closeButton.addEventListener('click', function() {
+       bookListSection.classList.remove('show');
+    });
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Books and Articles</title>
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      
+   </head>
+<body>
+      <!--==================== HEADER ====================-->
+   <div class="t-container">
+      <header class="header" id="header">
+         <nav class="nav nav-container">
+            <a href="#" class="nav__logo">Author Name</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">About Us</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="booksales.html" class="nav__link">Books</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="shortfilm.html" class="nav__link">Short Films</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="contact.html" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search button -->
+               <i class="ri-search-line nav__search" id="search-btn"></i>
+
+               <!-- Book icon added here -->
+               <i class="ri-book-line nav__book-icon" id="book-list-link"></i>
+               
+               <!-- Login button -->
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line" id="nav-toggle"></i>
+               </div>
+            </div>
+            
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+<!--==================== LOGIN ====================-->
+<div class="login" id="login">
+   <form action="" class="login__form">
+       <h2 class="login__title">Log In</h2>
+
+       <div class="login__group">
+           <div>
+               <label for="email" class="login__label">Email</label>
+               <input type="email" placeholder="Write your email" id="email" class="login__input">
+           </div>
+
+           <div>
+               <label for="password" class="login__label">Password</label>
+               <input type="password" placeholder="Enter your password" id="password" class="login__input">
+           </div>
+       </div>
+
+       <div>
+           <p class="login__signup">
+               You do not have an account? <a href="#" id="open-signup">Sign up</a>
+           </p>
+
+           <a href="#" class="login__forgot">
+               You forgot your password
+           </a>
+
+           <button type="submit" class="login__button">Log In</button>
+       </div>
+   </form>
+
+   <i class="ri-close-line login__close" id="login-close"></i>
+</div>
+
+<!--==================== SIGN-UP ====================-->
+<div class="signup" id="signup">
+   
+   <form action="" class="signup__form">
+      <i class="ri-close-line signup__close" id="signup-close"></i>
+
+       <h2 class="signup__title">Sign Up</h2>
+
+       <div class="signup__group">
+            <div>
+               <label for="signup-name" class="signup__label">Name</label>
+               <input type="text" placeholder="Enter your Name" id="signup-name" class="signup__input">
+            </div>
+            <div>
+               <label for="signup-email" class="signup__label">Email</label>
+               <input type="email" placeholder="Enter your email" id="signup-email" class="signup__input">
+            </div>
+            <div>
+               <label for="signup-password" class="signup__label">Password</label>
+               <input type="password" placeholder="Create your password" id="signup-password" class="signup__input">
+            </div>
+       </div>
+
+       <div>
+           <p class="signup__login">
+               Already have an account? <a href="#" id="open-login">Log In</a>
+           </p>
+
+           <button type="submit" class="signup__button">Sign Up</button>
+       </div>
+   </form>
+
+</div>
+
+      
+
+      <!--==================== MAIN ====================-->
+       <!-- Image Slider  -->
+   <div class="carousel">
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img src="assets\img\music-3510326_1920.jpg"  alt="Slide 1">
+         </div>
+         <!-- <div class="carousel-item">
+            <img src="assets\img/freepik-export-20240929070505SAs0.jpeg" alt="Slide 3">
+          </div> -->
+         <div class="carousel-item">
+           <img src="assets\img\love-699480_1920.jpg" alt="Slide 2">
+         </div>
+         <div class="carousel-item">
+           <img src="assets\img\book-1283865_1920.jpg" alt="Slide 3">
+         </div>
+      </div>
+      <button class="btn-1 carousel-control prev" onclick="moveSlide(-1)">❮</button>
+      <button class="btn-1 carousel-control next" onclick="moveSlide(1)">❯</button>
+   <div class="carousel-indicators">
+       <span class="indicator active" onclick="currentSlide(0)"></span>
+       <span class="indicator" onclick="currentSlide(1)"></span>
+       <span class="indicator" onclick="currentSlide(2)"></span>
+   </div>
+</div>
+</div>
+
+
+   <div class="container">
+       <!-- Section 1: 2/9 part with scrollable book names -->
+       <div class="section section-1">
+           <h2>Book List</h2>
+           <ul>
+               <li class="list-group-item"><a href="booklist.html" target="_blank" style="text-decoration: none;">The Bible</a></li>
+               <li class="list-group-item"><a href="https://example.com/book2" target="_blank" style="text-decoration: none;">Mere Christianity by C.S. Lewis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book3" target="_blank" style="text-decoration: none;">The Pilgrim's Progress by John Bunyan</a></li>
+               <li class="list-group-item"><a href="https://example.com/book1" target="_blank" style="text-decoration: none;">The Bible</a></li>
+               <li class="list-group-item"><a href="https://example.com/book2" target="_blank" style="text-decoration: none;">Mere Christianity by C.S. Lewis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book3" target="_blank" style="text-decoration: none;">The Pilgrim's Progress by John Bunyan</a></li>
+               <li class="list-group-item"><a href="https://example.com/book4" target="_blank" style="text-decoration: none;">The Purpose Driven Life by Rick Warren</a></li>
+               <li class="list-group-item"><a href="https://example.com/book5" target="_blank" style="text-decoration: none;">The Case for Christ by Lee Strobel</a></li>
+               <li class="list-group-item"><a href="https://example.com/book6" target="_blank" style="text-decoration: none;">The Screwtape Letters by C.S. Lewis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book7" target="_blank" style="text-decoration: none;">God's Smuggler by Brother Andrew</a></li>
+               <li class="list-group-item"><a href="https://example.com/book8" target="_blank" style="text-decoration: none;">The Ragamuffin Gospel by Brennan Manning</a></li>
+               <li class="list-group-item"><a href="https://example.com/book9" target="_blank" style="text-decoration: none;">Knowing God by J.I. Packer</a></li>
+               <li class="list-group-item"><a href="https://example.com/book10" target="_blank" style="text-decoration: none;">Desiring God by John Piper</a></li>
+               <li class="list-group-item"><a href="https://example.com/book11" target="_blank" style="text-decoration: none;">The Cost of Discipleship by Dietrich Bonhoeffer</a></li>
+               <li class="list-group-item"><a href="https://example.com/book12" target="_blank" style="text-decoration: none;">Radical by David Platt</a></li>
+               <li class="list-group-item"><a href="https://example.com/book13" target="_blank" style="text-decoration: none;">The Insanity of God by Nik Ripken</a></li>
+               <li class="list-group-item"><a href="https://example.com/book14" target="_blank" style="text-decoration: none;">The Jesus I Never Knew by Philip Yancey</a></li>
+               <li class="list-group-item"><a href="https://example.com/book15" target="_blank" style="text-decoration: none;">Crazy Love by Francis Chan</a></li>
+               <li class="list-group-item"><a href="https://example.com/book16" target="_blank" style="text-decoration: none;">Heaven by Randy Alcorn</a></li>
+               <li class="list-group-item"><a href="https://example.com/book17" target="_blank" style="text-decoration: none;">The Practice of the Presence of God by Brother Lawrence</a></li>
+               <li class="list-group-item"><a href="https://example.com/book18" target="_blank" style="text-decoration: none;">The Imitation of Christ by Thomas à Kempis</a></li>
+               <li class="list-group-item"><a href="https://example.com/book19" target="_blank" style="text-decoration: none;">Not a Fan by Kyle Idleman</a></li>
+               <li class="list-group-item"><a href="https://example.com/book20" target="_blank" style="text-decoration: none;">The Circle Maker by Mark Batterson</a></li>
+
+           </ul>
+       </div>
+       
+
+       <!-- Section 2: 4/9 part with multiple cards -->
+         <div class="section section-2">
+            <div class="cards-wrapper">
+               <div class="card">
+                   <div class="card-content">
+                       <div class="image-content">
+                           <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Person Image">
+                       </div>
+                       <div class="text-content">
+                           <h3>ரிக்யூவின் தேநீர்</h3>
+                           <p>ஜப்பானிய தேநீர் கலைவின் மாஸ்டராகக் கருதப்படுபவர் சென் ரிக்யூ. துறவியான இவர் தேநீர் தயாரிப்பையும் பகிர்வையும் கலையின் நிலைக்கு உயர்த்தினார். உலகெங்கும் தேநீர் உணர்வு பரவியதாக அறிந்தபட்ட...</p>
+                           <div class="date-content">
+                               <div class="icon">
+                                   <img src="assets\img\calendar.png" alt="Calendar Icon">
+                               </div>
+                               <div class="date">
+                                   <p class="date">16 SEP 2024</p>  
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <button class="btn" onclick="window.location.href='continue.html'">Continue</button>
+               </div>
+               
+               <div class="card">
+                   <div class="card-content">
+                       <div class="image-content">
+                           <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Person Image">
+                       </div>
+                       <div class="text-content">
+                           <h3>ரிக்யூவின் தேநீர்</h3>
+                           <p>ஜப்பானிய தேநீர் கலைவின் மாஸ்டராகக் கருதப்படுபவர் சென் ரிக்யூ. துறவியான இவர் தேநீர் தயாரிப்பையும் பகிர்வையும் கலையின் நிலைக்கு உயர்த்தினார். உலகெங்கும் தேநீர் உணர்வு பரவியதாக அறிந்தபட்ட...</p>
+                           <div class="date-content">
+                               <div class="icon">
+                                   <img src="assets\img\calendar.png" alt="Calendar Icon">
+                               </div>
+                               <div class="date">
+                                   <p class="date">16 SEP 2024</p>  
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <button class="btn" onclick="window.location.href='continue.html'">Continue</button>
+               </div>
+
+               <div class="card">
+                  <div class="card-content">
+                      <div class="image-content">
+                          <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Person Image">
+                      </div>
+                      <div class="text-content">
+                          <h3>ரிக்யூவின் தேநீர்</h3>
+                          <p>ஜப்பானிய தேநீர் கலைவின் மாஸ்டராகக் கருதப்படுபவர் சென் ரிக்யூ. துறவியான இவர் தேநீர் தயாரிப்பையும் பகிர்வையும் கலையின் நிலைக்கு உயர்த்தினார். உலகெங்கும் தேநீர் உணர்வு பரவியதாக அறிந்தபட்ட...</p>
+                          <div class="date-content">
+                              <div class="icon">
+                                  <img src="assets\img\calendar.png" alt="Calendar Icon">
+                              </div>
+                              <div class="date">
+                                  <p class="date">16 SEP 2024</p>  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="btn" onclick="window.location.href='continue.html'">Continue</button>
+              </div>
+
+               <div class="card">
+                  <div class="card-content">
+                     <div class="image-content">
+                        <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Person Image">
+                     </div>
+                     <div class="text-content">
+                        <h3>ரிக்யூவின் தேநீர்</h3>
+                        <p>ஜப்பானிய தேநீர் கலைவின் மாஸ்டராகக் கருதப்படுபவர் சென் ரிக்யூ. துறவியான இவர் தேநீர் தயாரிப்பையும் பகிர்வையும் கலையின் நிலைக்கு உயர்த்தினார். உலகெங்கும் தேநீர் உணர்வு பரவியதாக அறிந்தபட்ட...</p>
+                        <div class="date-content">
+                              <div class="icon">
+                                 <img src="assets\img\calendar.png" alt="Calendar Icon">
+                              </div>
+                              <div class="date">
+                                 <p class="date">16 SEP 2024</p>  
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="btn" onclick="window.location.href='continue.html'">Continue</button>
+               </div>
+                
+            </div>
+         </div>
+
+       
+       <!-- Section 3: 3/9 part for About Me -->
+      <div class="section section-3">
+         <div class="about-card">
+            <div class="about-image">
+                  <img src="assets\img\smiling-888532_640.jpg" alt="About Me Image">
+            </div>
+            <div class="about-content">
+                  <h3>About Me</h3>
+                  <p>Hello! I'm an enthusiast of technology, literature, and fine art. My goal is to explore and share knowledge about diverse cultures, historical figures, and creative expressions.</p>
+                  <a href="about.html" class="more-details">More Details</a>
+            </div>
+         </div>
+
+         <div class="recent-posts">
+               <h2>Recent Posts</h2>
+               <div class="post-item">
+                  <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Book 1" class="post-image">
+                  <div class="post-info">
+                     <h3>ரிக்யூவின் தேநீர்</h3>
+                  </div>
+               </div>
+               <hr>
+               <div class="post-item">
+                  <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Book 2" class="post-image">
+                  <div class="post-info">
+                     <h3>ரிக்யூவின் தேநீர்</h3>
+                  </div>
+               </div>
+               <hr>
+               <div class="post-item">
+                  <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Book 3" class="post-image">
+                  <div class="post-info">
+                     <h3>ரிக்யூவின் தேநீர்</h3>
+                  </div>
+               </div>
+               <hr>
+               <div class="post-item">
+                  <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Book 3" class="post-image">
+                  <div class="post-info">
+                     <h3>ரிக்யூவின் தேநீர்</h3>
+                  </div>
+               </div>
+               <hr>
+               <div class="post-item">
+                  <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Book 3" class="post-image">
+                  <div class="post-info">
+                     <h3>ரிக்யூவின் தேநீர்</h3>
+                  </div>
+               </div>
+               <hr>
+               <div class="post-item">
+                  <img src="assets\img\Zhang-Zeduan张择端.jpeg" alt="Book 3" class="post-image">
+                  <div class="post-info">
+                     <h3>ரிக்யூவின் தேநீர்</h3>
+                  </div>
+               </div>
+               <hr>
+
+         </div>  <!--   recent-posts -->
+
+      </div> <!-- Section 3-->
+
+   </div> <!-- Container -->
+
+   <div class="main-container">
+      <!-- Left Side (2/3) -->
+      
+      <div class="left-container">
+         <div class="card-container">
+            <!-- Card 1: Total Books Published -->
+            <div class="card-1">
+                <h3><i class="fas fa-book"></i> Total Books Published</h3>
+                <p class="count" data-target="1200">0</p>
+            </div>
+            
+            <!-- Card 2: Total Visitors -->
+            <div class="card-1">
+                <h3><i class="fas fa-users"></i> Total Visitors</h3>
+                <p class="count" data-target="25000">0</p>
+            </div>
+        </div>
+        
+
+         
+          <!-- YouTube Videos -->
+          <div class="video-section">
+            <h3>Related Videos</h3>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Video 1"></iframe>
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Video 2"></iframe>
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID3" title="Video 3"></iframe>
+               
+            </div> 
+            <!-- Subscribe Section -->
+            <div class="subscribe-container">
+               <!-- <label for="email">Subscribe to our channel:</label> -->
+               <input type="email" id="s-email" name="email" placeholder="Enter your email for Subscription" />
+               <button class="btn" type="submit">Subscribe</button>
+               <button id="more-videos" onclick="window.location.href='shortfilm.html'"> Watch More Videos → </button>
+            </div> 
+          </div>
+          
+      </div>
+    
+      <!-- Right Side (1/3) Calendar -->
+      <div class="right-container">
+         <div class="container-1">
+            <h2>Issued Books Calendar</h2>
+      
+            <div class="calendar-controls">
+                <button id="prev-month">← Previous</button>
+                <span id="current-month-year" class="month-year-display"></span>
+                <button id="next-month">Next →</button>
+                
+            </div>
+      
+            <div class="calendar-container">
+                <button class="btn" id="open-picker">Select Month/Year</button>
+                <div id="calendar"></div>
+            </div>
+      
+            <div class="issued-books" id="issued-books">
+                <h3>Books Issued on Selected Date:</h3>
+                <ul id="book-list">
+                    <!-- Issued books will be displayed here -->
+                </ul>
+            </div>
+        </div>
+      
+        <!-- Modal for Date Picker -->
+        <div id="date-picker-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-picker" class="close">&times;</span>
+                <h3>Select Month and Year</h3>
+                <div class="date-select-container">
+                    <label for="month-select">Month:</label>
+                    <select id="month-select" class="select-box"></select>
+      
+                    <label for="year-select">Year:</label>
+                    <select id="year-select" class="select-box"></select>
+                </div>
+      
+                <button id="apply-selection" class="apply-button">Go to Selected Month</button>
+            </div>
+        </div>
+      </div>
+     </div> <!-- main-container -->
+
+      <div class="book-sale-container">
+            <h3>Book Sales</h3>
+            <div class="books-grid">
+            <div class="book-item">
+               <img src="assets\img\23-1.png" alt="Book 1">
+               <p>Book Title 1</p>
+            </div>
+            <div class="book-item">
+               <img src="assets\img\23-1.png" alt="Book 2">
+               <p>Book Title 2</p>
+            </div>
+            <div class="book-item">
+               <img src="assets\img\23-1.png" alt="Book 3">
+               <p>Book Title 3</p>
+            </div>
+            <div class="book-item">
+               <img src="assets\img\23-1.png" alt="Book 4">
+               <p>Book Title 4</p>
+            </div>
+            <div class="book-item">
+               <img src="assets\img\23-1.png" alt="Book 5">
+               <p>Book Title 5</p>
+            </div>
+            <div class="book-item">
+               <img src="assets\img\23-1.png" alt="Book 6">
+               <p>Book Title 6</p>
+            </div>
+            </div>
+            <!-- Explore More Button -->
+            <div class="explore-more-container">
+            <button  class="explore-more" onclick="window.location.href='booksales.html'">Explore More →</button>
+            </div>
+      </div>
+
+      <!-- Back To Top Button -->
+      <a href="#" class="back-to-top">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="rgba(255,255,255,1)">
+         <path d="M13.0001 7.82843V20H11.0001V7.82843L5.63614 13.1924L4.22192 11.7782L12.0001 4L19.7783 11.7782L18.3641 13.1924L13.0001 7.82843Z"></path></svg>
+      </a>
+      
+      <!-- Responsive Stylish Footer -->
+      <footer class="footer">
+         <div class="footer-content">
+         <!-- Social Media Icons -->
+         <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+         </div>
+      
+         <!-- Contact Details -->
+         <div class="contact-details">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-envelope"></i> Email : <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <p><i class="fas fa-phone-alt"></i> Phone : +123 456 7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> Address : 123 Street, City, Country</p>
+            <p><i class="fas fa-globe"></i> Website : <a href="https://www.example.com">www.example.com</a></p>
+         </div>
+         </div>
+      
+         <!-- Responsive Map -->
+         <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2005921.825778145!2d78.874373875!3d10.90157918223256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5766c36af8f%3A0x6b032561715070a3!2sBishop%20Heber%20College!5e0!3m2!1sen!2sin!4v1727547855469!5m2!1sen!2sin"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      
+         <!-- Copyright Section -->
+         <div class="footer-bottom">
+         <p>&copy; Copyrights <strong>MD INFOTECH.</strong>  All rights reserved.</p>
+         <span>Designed and Developed by <a href="https://mdinfotech.tech">MD INFOTECH</a></span>
+         </div>
+      </footer>
+ 
+    
+   
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <script>
+         
+         // Section 2
+         // Get the section element
+         const bookListSection = document.querySelector('.section-1');
+         // Add a nav link to trigger the popup (assumed to be in your navigation bar)
+         const navLink = document.getElementById('book-list-link'); // Assuming an ID for the nav link
+         const closeButton = document.createElement('span'); // Create a close button inside the section
+         closeButton.textContent = '×';
+         closeButton.classList.add('close-button'); // Add the close-button class for styling
+         bookListSection.appendChild(closeButton);
+
+         // Show the popup on nav link click
+         navLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            bookListSection.classList.add('show'); // Add the "show" class to slide the popup in
+         });
+
+         // Hide the popup when clicking the close button
+         closeButton.addEventListener('click', function() {
+            bookListSection.classList.remove('show');
+         });
+
+      </script>
+   </body>
+</html>
